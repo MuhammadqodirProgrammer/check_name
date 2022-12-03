@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btnadd{
+            display: none;
+        }
+        button ,input{
+            padding: 10px;
+        }
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: orange;
+}
+.container{
+    max-width: 500px;
+    padding: 15px 10px;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <form id="form">
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </form>
+    
+    <div id="display">
+<ol>
+    <li class="item1">Name</li>
+    <li class="item2">Name</li>
+    <li class="item3">Name</li>
+    <li class="item4">Name</li>
+    <li class="item5">Name</li>
+    <li class="item6">Name</li>
+    <li class="item7">Name</li>
+    <li class="item8">Name</li>
+    <li class="item9">Name</li>
+    <li class="item10">Name</li>
+    <li class="item11">Name</li>
+</ol>
+<input type="text" placeholder="name check" id="username" autocomplete="on" class="form-control">
+<button id="btnt" type="button">Tekshirish</button>
+<h2 id="heading"></h2>
+<h2 id="heading2"></h2>
+<button id="btnadd" type="button"> Add name</button>
+    </div>
+</div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
