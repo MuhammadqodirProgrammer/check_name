@@ -20,26 +20,50 @@
         }
         .card{
             background-color: #9acd32;
+
         }
+      
         body{
             background-color: #adff2f;
             font-family: 'Rubik Beastly', cursive;
 font-size: 24px;
             
         }
+        @media (max-width: 567px){
+
+            .cards{
+            justify-content: center !important;
+            margin: 0 auto !important;
+            width: 100%;
+            
+        }
+        .card{
+            margin: 0 auto ;
+            width: 100%;
+            margin-left: calc(50% + 137px) !important;
+        }
+        /* #pokemon{
+            font-family: 'Nosifer', cursive;
+            color: rgb(156, 47, 47);
+            max-width: 320px !important;
+font-weight: 700;
+font-size: 36px;
+        } */
+}
         #pokemon{
             font-family: 'Nosifer', cursive;
             color: rgb(156, 47, 47);
             max-width: 500px;
-            
-     
 font-weight: 800;
 font-size: 80px;
+        }
+        .container{
+            max-width: 1440px;
         }
     </style>
 </head>
 <body>
-    <div class="container mx-auto">
+    <div class="container mx-auto ">
     <h1 id="pokemon"class="mx-auto text-center mt-5 ">pokemon</h1>
    <div class="row gap-auto cards  flex-wrap" id="card-box">
     

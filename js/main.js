@@ -70,7 +70,7 @@ const cardel =document.querySelector("#card-box")
 function myFunc() {
     let cards =""
     for( item of pokemons){
-         cards +=`  <div class="card col-lg-3 col-md-4 col-sm-10 col-12 mx-sm-auto   shadow-lg p-2  rounded  rounded-4  mt-2 mb-4 " >
+         cards +=`  <div class="card col-lg-3 col-md-4 col-sm-12 col-12 mx-sm-auto  mx-3 text-center  shadow-lg p-2  rounded  rounded-4  mt-2 mb-4 " >
           <img src="${item.img}" class="card-img-top" alt="images">
        <div class="card-body">
        <h4 class="card-title">${item.id}</h4>
