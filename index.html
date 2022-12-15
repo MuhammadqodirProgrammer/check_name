@@ -29,27 +29,7 @@
 font-size: 24px;
             
         }
-        @media (max-width: 567px){
-
-            .cards{
-            justify-content: center !important;
-            margin: 0 auto !important;
-            width: 100%;
-            
-        }
-        .card{
-            margin: 0 auto ;
-            width: 100%;
-            /* margin-left: calc(50% + 137px) !important; */
-        }
-        /* #pokemon{
-            font-family: 'Nosifer', cursive;
-            color: rgb(156, 47, 47);
-            max-width: 320px !important;
-font-weight: 700;
-font-size: 36px;
-        } */
-}
+   
         #pokemon{
             font-family: 'Nosifer', cursive;
             color: rgb(156, 47, 47);
@@ -60,12 +40,26 @@ font-size: 80px;
         .container{
             max-width: 1440px;
         }
+
+@media only screen and (max-width: 390px) {
+            #pokemon {
+                font-size: 25px;
+            }
+        }
+        select,option{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
     </style>
 </head>
 <body>
     <div class="container mx-auto ">
+
     <h1 id="pokemon"class="mx-auto text-center mt-5 ">pokemon</h1>
-   <div class="row gap-auto cards  flex-wrap" id="card-box">
+   <select class="form-select w-50 mx-auto" id="select">
+        <option value="All">All</option>
+        
+   </select>
+    <div class="row gap-auto cards  flex-wrap" id="card-box">
     
    </div>
         </div>
