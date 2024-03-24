@@ -1,6 +1,3 @@
-
-
-
 // const arr = [];
 
 // const form = document.querySelector("#form");
@@ -35,11 +32,11 @@
 //     console.log(arr2);
 //     console.dir(userName.value);
 //     console.log(arr.some((val) => val == userName.value));
-    
+
 //     if (arr.some((val) => val == userName.value)) {
-//         document.querySelector("#heading").innerHTML ="Bu ism bizda avvaldan mavjud" 
+//         document.querySelector("#heading").innerHTML ="Bu ism bizda avvaldan mavjud"
 //     }else{
-//         document.querySelector("#heading").innerHTML ="Kechrasz bunday ism  mavjud emas hohlasangiz qo'shib qoying" 
+//         document.querySelector("#heading").innerHTML ="Kechrasz bunday ism  mavjud emas hohlasangiz qo'shib qoying"
 //         addname.style.display ="block"
 //     }
 
@@ -64,13 +61,13 @@
 // })
 
 // console.log(arr2);
-const cardel =document.querySelector("#card-box")
-
+const cardel = document.querySelector("#card-box");
 
 function myFunc() {
-    let cards =""
-    for( item of pokemons){
-         cards +=`  <div class="card col-lg-3 col-md-4 col-sm-12 col-12 mx-sm-auto  mx-3 text-center  shadow-lg p-2  rounded  rounded-4  mt-2 mb-4 " >
+  let cards = "";
+  for (item of pokemons) {
+    // Bu yerga col-sm-12 ya'ni kichik telefonlarga yozmapsiz
+    cards += `  <div class="card col-sm-12 col-lg-3 col-md-4 col-sm-12 col-12 mx-sm-auto  mx-3 text-center  shadow-lg p-2  rounded  rounded-4  mt-2 mb-4 " >
           <img src="${item.img}" class="card-img-top" alt="images">
        <div class="card-body">
        <h4 class="card-title">${item.id}</h4>
@@ -79,14 +76,14 @@ function myFunc() {
         <p class="card-text"><span> height: ${item.height}</span><br><span> weight: ${item.weight}</span></p>
         <h6 class="card-title"><span>${item.weaknesses}</span></h6>
       </div>
-      </div> `
-   
-      console.log(item.egg);
-    }
-    
-    cardel.innerHTML =cards
+      </div> `;
+
+    console.log(item.egg);
+  }
+
+  cardel.innerHTML = cards;
 }
-myFunc()
+myFunc();
 
 // let cartoonList = document.querySelector(".cartoonList");
 
@@ -112,8 +109,3 @@ myFunc()
 // }
 
 // renderPokemon(pokemons);
-
-
-
-
-
